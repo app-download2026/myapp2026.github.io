@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="UTF-8"><title>Themes</title>
+<head><meta charset="UTF-8"><title>Themes下载</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+    /* 渐变文字动画 */
+    @keyframes colorChange {
+        0% { color: #0075FF; }
+        50% { color: #008CFF; }
+        100% { color: #0075FF; }
+    }
+    .animated-text {
+        animation: colorChange 1.5s ease-in-out infinite;
+        font-size: 14px;
+        margin-top: 5px;
+        font-weight: normal;
+    }
+</style>
 </head>
 <body style="margin:0;font-family:system-ui;background:#fff">
     
@@ -10,21 +24,26 @@
         
         <img src="icon.png" width="120" height="120" style="border-radius:24px">
         
-        <h1 style="font-size:36px;margin:20px 0 10px">Themes</h1>
+        <h1 style="font-size:36px;margin:20px 0 5px">Themes</h1>
+        
+        <!-- 渐变文字 -->
+        <div class="animated-text" style="font-size:14px;text-align:center">
+            让您的手机与别人的与众不同
+        </div>
         
         <p style="font-size:18px;color:#333;line-height:1.6;text-align:left;background:#f5f5f5;padding:24px;border-radius:20px;max-width:500px;margin:20px auto">
             Themes 是一个很多华为第三方主题的主题库，可以在里面下载很多第三方华为主题，有意见可以跟官方说。
         </p>
         
-        <!-- 视频播放器 -->
-        <video controls width="100%" style="max-width:500px;border-radius:20px;margin:20px auto;background:#000">
+        <!-- 自动循环播放视频（静音，点击不会暂停） -->
+        <video width="100%" style="max-width:500px;border-radius:20px;margin:20px auto;background:#000;display:block" autoplay loop muted playsinline>
             <source src="video.mp4" type="video/mp4">
             您的浏览器不支持视频播放
         </video>
         
         <p style="font-size:18px;margin:30px 0 20px">点击下方按钮下载</p>
         
-        <a href="Themes.apk" download style="background:#1e6df2;color:white;padding:16px 48px;border-radius:60px;text-decoration:none;font-size:20px;font-weight:bold;display:inline-block">立即下载</a>
+        <a href="app.apk" download style="background:#1e6df2;color:white;padding:16px 48px;border-radius:60px;text-decoration:none;font-size:20px;font-weight:bold;display:inline-block">立即下载</a>
         
     </div>
 </body>
